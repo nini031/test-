@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    CRAFT brief
+    Context: An independent guide for first-time visitors to Georgia.
+    Role: Senior front-end designer and travel copywriter.
+    Action: Create a two-page site with no JavaScript.
+    Format: Semantic HTML and one shared CSS file.
+    Target audience: Self-directed travellers who plan online and like data-rich guides.
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan a first trip to Georgia with a practical 14-day route, destination inspiration and clear travel notes.">
+  <title>Travel Georgia — A field guide for your first trip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="index.html" aria-label="Travel Georgia home">
+        <span class="wordmark-mark" aria-hidden="true">TG</span>
+        <span>TRAVEL<br>GEORGIA</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html" aria-current="page">Overview</a>
+        <a class="nav-link" href="#regions">Regions</a>
+        <a class="nav-cta" href="#route">Plan your trip <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> FIELD NOTES / CAUCASUS</p>
+        <h1 id="hero-title">Small country.<br><span>Big range.</span></h1>
+        <p class="hero-intro">Between the Black Sea and the Caucasus, Georgia packs ancient cities, high mountain villages and long-table hospitality into a country you can cross in a day.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#regions">Explore the regions <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#route">See the 14-day route <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-meta" aria-label="Trip overview">
+          <div><span class="mono meta-number">69,700</span><span class="meta-label">km² to explore</span></div>
+          <div><span class="mono meta-number">11</span><span class="meta-label">places to explore</span></div>
+          <div><span class="mono meta-number">1</span><span class="meta-label">unforgettable trip</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-topline"><span>LANDSCAPE / 01</span><span class="mono">41°43'N 44°47'E</span></div>
+        <div class="mountain-art">
+          <svg viewBox="0 0 700 340" role="img" aria-labelledby="mountain-title mountain-desc">
+            <title id="mountain-title">Caucasus mountain ridgelines</title>
+            <desc id="mountain-desc">Illustrated overlapping mountain ridges beneath a rising sun.</desc>
+            <circle class="sun" cx="505" cy="93" r="35"></circle>
+            <path class="ridge ridge-back" d="M0 247 78 180 127 218 228 103 278 157 350 75 415 155 478 112 556 197 610 159 700 226"></path>
+            <path class="ridge ridge-mid" d="M0 273 92 224 159 248 248 170 307 213 386 142 453 222 525 176 591 230 647 204 700 248"></path>
+            <path class="ridge ridge-front" d="M0 302 102 263 190 285 272 227 354 278 436 220 517 270 603 228 700 283"></path>
+            <path class="ridge-detail" d="m207 126 21-23 20 23m77-27 25-24 24 26m89 15 16-14 19 16"></path>
+          </svg>
+          <div class="visual-caption"><span>GREATER CAUCASUS</span><span class="mono">N 42° / E 44°</span></div>
+        </div>
+        <div class="elevation">
+          <div class="elevation-heading"><span>ONE COUNTRY, MANY ALTITUDES</span><span class="mono">0—2,100 M</span></div>
+          <svg class="elevation-chart" viewBox="0 0 700 100" role="img" aria-labelledby="elevation-title elevation-desc">
+            <title id="elevation-title">Elevation from Batumi to Ushguli</title>
+            <desc id="elevation-desc">A rising profile connecting Batumi at sea level, Kutaisi at 125 metres, Tbilisi at 450 metres, Mestia at 1,500 metres, and Ushguli at approximately 2,100 metres.</desc>
+            <path class="chart-grid" d="M0 20H700M0 50H700M0 80H700"></path>
+            <path class="chart-area" d="M15 83 180 77 340 65 510 34 685 12V90H15Z"></path>
+            <path class="chart-line" d="M15 83 180 77 340 65 510 34 685 12"></path>
+            <circle class="chart-point" cx="15" cy="83" r="4"></circle><circle class="chart-point" cx="180" cy="77" r="4"></circle>
+            <circle class="chart-point" cx="340" cy="65" r="4"></circle><circle class="chart-point" cx="510" cy="34" r="4"></circle>
+            <circle class="chart-point" cx="685" cy="12" r="4"></circle>
+          </svg>
+          <div class="elevation-labels" aria-hidden="true">
+            <span><b>BATUMI</b><small>0 m</small></span><span><b>KUTAISI</b><small>125 m</small></span>
+            <span><b>TBILISI</b><small>450 m</small></span><span><b>MESTIA</b><small>1,500 m</small></span>
+            <span><b>USHGULI</b><small>~2,100 m</small></span>
+          </div>
+        </div>
+        <p class="visual-note">A rough cross-country profile · elevations are approximate</p>
+      </div>
+      <div class="hero-index mono" aria-hidden="true">01—02</div>
+    </section>
+
+    <section class="places-section section-pad" id="regions" aria-labelledby="places-title">
+      <div class="shell">
+        <div class="section-heading places-heading">
+          <div>
+            <p class="eyebrow">GO WHERE YOU'RE CURIOUS <span class="eyebrow-index mono">01 / 03</span></p>
+            <h2 id="places-title">Eleven ways in.</h2>
+          </div>
+          <p class="section-deck">Choose a category to filter the places, then open “Description” to learn about each corner of Georgia.</p>
+        </div>
+
+        <fieldset class="region-filters">
+          <legend class="visually-hidden">Filter places by category</legend>
+          <input type="radio" name="region-filter" id="filter-all" checked>
+          <input type="radio" name="region-filter" id="filter-mountains">
+          <input type="radio" name="region-filter" id="filter-culture">
+          <input type="radio" name="region-filter" id="filter-coast">
+          <div class="filter-tabs" role="group" aria-label="Place categories">
+            <label for="filter-all">All places <span>11</span></label>
+            <label for="filter-mountains">Mountains <span>03</span></label>
+            <label for="filter-culture">Culture &amp; regions <span>07</span></label>
+            <label for="filter-coast">Coast <span>01</span></label>
+          </div>
+          <div class="region-grid">
+            <article class="region-card" data-category="mountains">
+              <div class="region-image image-kazbegi" role="img" aria-label="Snow-capped Caucasus peaks above a mountain valley"><span class="image-index mono">01 / MT</span><span class="image-alt-label">HIGH CAUCASUS</span></div>
+              <div class="region-content"><div class="region-meta"><span>MOUNTAINS</span><span class="mono">1,740 M</span></div><h3>Kazbegi<br><span>&amp; Stepantsminda</span></h3><p>Big horizons, the Gergeti Trinity Church and a dramatic stretch of the Georgian Military Highway.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Kazbegi is a high-mountain area along the Georgian Military Highway. From Stepantsminda, enjoy views of Gergeti Trinity Church and Mount Kazbek. Weather can change quickly, so check trail and road conditions before setting out.</p><p lang="ka">ყაზბეგი საქართველოს სამხედრო გზის გასწვრივ მდებარე მაღალმთიანი მხარეა. სტეფანწმინდიდან გერგეტის სამებისა და მყინვარწვერის ხედები იშლება. ამინდი სწრაფად იცვლება, ამიტომ გამგზავრებამდე ბილიკებისა და გზების მდგომარეობა გადაამოწმეთ.</p></details><div class="card-footer"><span class="mono">FROM TBILISI · ~3–4 HRS</span></div></div>
+            </article>
+            <article class="region-card" data-category="mountains">
+              <div class="region-image image-svaneti" role="img" aria-label="Medieval stone towers in a green mountain valley"><span class="image-index mono">02 / MT</span><span class="image-alt-label">SVANETI / 2,100 M</span></div>
+              <div class="region-content"><div class="region-meta"><span>MOUNTAINS</span><span class="mono">1,500–2,100 M</span></div><h3>Mestia<br><span>&amp; Ushguli</span></h3><p>Remote Svan villages, defensive stone towers and trails beneath some of the country's highest peaks.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Svaneti is known for its Caucasus peaks, medieval defensive towers and distinctive mountain villages. Mestia is the main base for exploring the region, while Ushguli is one of Europe's highest permanently inhabited settlements. Allow extra time for the journey.</p><p lang="ka">სვანეთი კავკასიონის მწვერვალებით, შუა საუკუნეების კოშკებითა და გამორჩეული მთის სოფლებითაა ცნობილი. მესტია რეგიონში მოგზაურობის მთავარი დასაყრდენია, უშგული კი ევროპის ერთ-ერთი ყველაზე მაღლა მდებარე მუდმივად დასახლებული სოფელია. გზაში მეტი დრო გაითვალისწინეთ.</p></details><div class="card-footer"><span class="mono">FROM TBILISI · LONG JOURNEY</span></div></div>
+            </article>
+            <article class="region-card" data-category="culture">
+              <div class="region-image image-tbilisi" role="img" aria-label="Tbilisi's old town with colorful rooftops and historic balconies"><span class="image-index mono">03 / CT</span><span class="image-alt-label">THE CAPITAL</span></div>
+              <div class="region-content"><div class="region-meta"><span>CITY &amp; CULTURE</span><span class="mono">450 M</span></div><h3>Tbilisi</h3><p>Balconied old streets, sulfur baths, a lively food scene and an easy base for first-time exploring.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Tbilisi is Georgia's capital and a convenient starting point for exploring the country. Wander the old districts for carved balconies, narrow lanes and the sulfur baths of Abanotubani. The city's varied neighbourhoods are easy to explore on foot, by metro or by taxi.</p><p lang="ka">თბილისი საქართველოს დედაქალაქი და მოგზაურობისთვის მოსახერხებელი საწყისი წერტილია. ძველ უბნებში აივნები, ვიწრო ქუჩები და აბანოთუბნის გოგირდის აბანოები დაგხვდებათ. ქალაქის უბნების დათვალიერება ფეხით, მეტროთი ან ტაქსით შეგიძლიათ.</p></details><div class="card-footer"><span class="mono">INTERNATIONAL GATEWAY</span></div></div>
+            </article>
+            <article class="region-card" data-category="culture">
+              <div class="region-image image-mtskheta" role="img" aria-label="Historic Georgian monastery above the meeting of two rivers"><span class="image-index mono">04 / CT</span><span class="image-alt-label">ANCIENT CAPITAL</span></div>
+              <div class="region-content"><div class="region-meta"><span>HISTORY</span><span class="mono">~20 KM FROM TBILISI</span></div><h3>Mtskheta</h3><p>Georgia's former capital is an easy day trip, with revered churches and a history that runs deep.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Mtskheta is one of Georgia's oldest cities and an important centre of the country's early Christian history. Svetitskhoveli Cathedral and Jvari Monastery are among its best-known landmarks. It makes an easy day trip from Tbilisi.</p><p lang="ka">მცხეთა საქართველოს ერთ-ერთი უძველესი ქალაქი და ქვეყნის ადრეული ქრისტიანული ისტორიის მნიშვნელოვანი ცენტრია. სვეტიცხოვლის ტაძარი და ჯვრის მონასტერი მისი ცნობილი ღირსშესანიშნაობებია. თბილისიდან აქ ერთდღიანი მოგზაურობა მარტივია.</p></details><div class="card-footer"><span class="mono">EASY DAY TRIP</span></div></div>
+            </article>
+            <article class="region-card" data-category="culture">
+              <div class="region-image image-kakheti" role="img" aria-label="Vineyards and rolling hills in Georgia's Kakheti wine region"><span class="image-index mono">05 / WI</span><span class="image-alt-label">ALAZANI VALLEY</span></div>
+              <div class="region-content"><div class="region-meta"><span>WINE COUNTRY</span><span class="mono">EAST GEORGIA</span></div><h3>Kakheti</h3><p>Vineyards, quiet towns and qvevri wine traditions make this an inviting change of pace from the capital.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Kakheti is known for its winemaking traditions, the Alazani Valley and historic towns. Sighnaghi and Telavi are good bases for exploring. Plan winery visits ahead, and enjoy tastings responsibly.</p><p lang="ka">კახეთი მეღვინეობის ტრადიციებით, ალაზნის ველითა და ისტორიული ქალაქებითაა ცნობილი. სიღნაღი და თელავი კარგი საწყისი ადგილებია რეგიონის დასათვალიერებლად. მარნებში ვიზიტი წინასწარ დაგეგმეთ და ღვინო პასუხისმგებლობით დააგემოვნეთ.</p></details><div class="card-footer"><span class="mono">EAST OF TBILISI</span></div></div>
+            </article>
+            <article class="region-card" data-category="coast">
+              <div class="region-image image-batumi" role="img" aria-label="Batumi's Black Sea waterfront framed by subtropical greenery"><span class="image-index mono">06 / CS</span><span class="image-alt-label">BLACK SEA / 0 M</span></div>
+              <div class="region-content"><div class="region-meta"><span>BLACK SEA COAST</span><span class="mono">0 M</span></div><h3>Batumi</h3><p>A subtropical seaside city where a long promenade, botanical garden and old streets meet the Black Sea.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Batumi is Adjara's main city on the Black Sea. Stroll through the old town, follow the seafront boulevard or visit the botanical garden. The beach area is busier during the summer months.</p><p lang="ka">ბათუმი შავი ზღვის სანაპიროზე მდებარე აჭარის მთავარი ქალაქია. გაისეირნეთ ძველ ბათუმში, ზღვისპირა ბულვარზე ან მოინახულეთ ბოტანიკური ბაღი. ზაფხულში სანაპირო უფრო ხალხმრავალია.</p></details><div class="card-footer"><span class="mono">ADJARA / WEST GEORGIA</span></div></div>
+            </article>
+            <article class="region-card" data-category="mountains">
+              <div class="region-image image-tusheti" role="img" aria-label="Remote Caucasus mountain landscape in Tusheti"><span class="image-index mono">07 / MT</span><span class="image-alt-label">REMOTE CAUCASUS</span></div>
+              <div class="region-content"><div class="region-meta"><span>MOUNTAINS</span><span class="mono">NORTHEAST GEORGIA</span></div><h3>Tusheti</h3><p>A remote highland region of stone villages, open ridgelines and winding mountain roads.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Tusheti is one of Georgia's most remote mountain regions, with stone villages, defensive towers and alpine meadows. Omalo is its main village. The mountain road is seasonal and challenging, so confirm access and transport conditions before travelling.</p><p lang="ka">თუშეთი საქართველოს ერთ-ერთი ყველაზე დაშორებული მთიანი მხარეა, რომელიც ქვის სოფლებით, კოშკებითა და ალპური მდელოებით იზიდავს. ომალო მისი მთავარი სოფელია. მთის გზა სეზონური და რთულია, ამიტომ გამგზავრებამდე გზის გახსნისა და ტრანსპორტის პირობები გადაამოწმეთ.</p></details><div class="card-footer"><span class="mono">SEASONAL MOUNTAIN ROAD</span></div></div>
+            </article>
+            <article class="region-card" data-category="culture">
+              <div class="region-image image-vardzia" role="img" aria-label="Cave monastery carved into a dramatic Georgian cliff"><span class="image-index mono">08 / HI</span><span class="image-alt-label">CAVE CITY</span></div>
+              <div class="region-content"><div class="region-meta"><span>HISTORY</span><span class="mono">SOUTH GEORGIA</span></div><h3>Vardzia</h3><p>An extraordinary cave monastery and historic landscape in Georgia's southern highlands.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Vardzia is a cave monastery carved into the cliffs in the 12th century during the reign of Queen Tamar. Its chambers, church and views over the Mtkvari River valley bring the site's history to life. Wear comfortable shoes and check opening hours before your visit.</p><p lang="ka">ვარძია კლდეში ნაკვეთი სამონასტრო კომპლექსია, რომელიც XII საუკუნეში, თამარ მეფის მმართველობის დროს შეიქმნა. გამოქვაბულები, ეკლესია და მტკვრის ხეობის ხედები მის ისტორიას აცოცხლებს. ჩაიცვით კომფორტული ფეხსაცმელი და ვიზიტამდე სამუშაო საათები გადაამოწმეთ.</p></details><div class="card-footer"><span class="mono">SAMTSKHE–JAVAKHETI</span></div></div>
+            </article>
+            <article class="region-card" data-category="culture">
+              <div class="region-image image-borjomi" role="img" aria-label="Forested hills and parkland around Borjomi"><span class="image-index mono">09 / NA</span><span class="image-alt-label">FOREST &amp; SPRINGS</span></div>
+              <div class="region-content"><div class="region-meta"><span>NATURE &amp; WELLNESS</span><span class="mono">CENTRAL GEORGIA</span></div><h3>Borjomi</h3><p>Forest walks, mineral-water springs and a relaxed base for exploring the surrounding parklands.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Borjomi is a resort town known for its forested valley and mineral-water springs. Trails from the central park make it easy to enjoy the surrounding greenery, while Borjomi-Kharagauli National Park offers longer hikes for nature lovers.</p><p lang="ka">ბორჯომი ტყიანი ხეობითა და მინერალური წყლის წყაროებით ცნობილი საკურორტო ქალაქია. ცენტრალური პარკის ბილიკები მწვანე გარემოში გასეირნების საშუალებას იძლევა, ხოლო ბორჯომ-ხარაგაულის ეროვნული პარკი ბუნების მოყვარულებს უფრო ხანგრძლივ ლაშქრობებს სთავაზობს.</p></details><div class="card-footer"><span class="mono">BORJOMI-KHARAGAULI AREA</span></div></div>
+            </article>
+            <article class="region-card" data-category="culture">
+              <div class="region-image image-racha" role="img" aria-label="Green mountain valleys in Georgia's Racha region"><span class="image-index mono">10 / WI</span><span class="image-alt-label">UPPER RIONI VALLEY</span></div>
+              <div class="region-content"><div class="region-meta"><span>MOUNTAINS &amp; WINE</span><span class="mono">WEST-CENTRAL GEORGIA</span></div><h3>Racha</h3><p>A quieter mountain region of forested valleys, small villages and distinctive local wines.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Racha is a mountainous region of western Georgia, with forested valleys, the Shaori Reservoir and small villages. Ambrolauri is a convenient base for exploring. Contact local wineries ahead of time if you would like to arrange a tasting.</p><p lang="ka">რაჭა დასავლეთ საქართველოს მთიანი მხარეა, სადაც ტყიანი ხეობები, შაორის წყალსაცავი და პატარა სოფლები დაგხვდებათ. ამბროლაური რეგიონში მოგზაურობის მოსახერხებელი ცენტრია. ღვინის დაგემოვნება თუ გსურთ, ადგილობრივ მარნებს წინასწარ დაუკავშირდით.</p></details><div class="card-footer"><span class="mono">RIONI VALLEY</span></div></div>
+            </article>
+            <article class="region-card" data-category="culture">
+              <div class="region-image image-samegrelo" role="img" aria-label="Waterfall and lush green canyon in Samegrelo"><span class="image-index mono">11 / RG</span><span class="image-alt-label">WESTERN GEORGIA</span></div>
+              <div class="region-content"><div class="region-meta"><span>REGION &amp; NATURE</span><span class="mono">WEST GEORGIA</span></div><h3>Samegrelo</h3><p>A lush western region known for its distinctive cuisine, historic Zugdidi and Martvili Canyon.</p><details class="region-description"><summary>Description / აღწერა</summary><p>Samegrelo is a distinctive region of western Georgia, known for Megrelian cuisine, Colchis heritage and lush landscapes. Visit the Dadiani Palace in Zugdidi, then explore the river gorge and waterfalls of Martvili Canyon. Check seasonal opening hours and boat-trip availability before visiting.</p><p lang="ka">სამეგრელო დასავლეთ საქართველოს გამორჩეული კუთხეა, რომელიც მეგრული სამზარეულოთი, კოლხეთის ისტორიითა და მწვანე ბუნებით იზიდავს. ზუგდიდში დადიანების სასახლე მოინახულეთ, მარტვილის კანიონში კი მდინარის ხეობა და ჩანჩქერები დაათვალიერეთ. ვიზიტამდე გადაამოწმეთ სეზონური სამუშაო საათები და ნავით გასეირნების შესაძლებლობა.</p></details><div class="card-footer"><span class="mono">ZUGDIDI · MARTVILI</span></div></div>
+            </article>
+          </div>
+          <p class="filter-note">FILTERS WORK WITH CSS ONLY · Open “Description” for the full regional notes.</p>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="intro-section section-pad" aria-labelledby="why-title">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">WHY GEORGIA <span class="eyebrow-index mono">01 / 03</span></p>
+          <h2 id="why-title">A little bit of<br><span>everything.</span></h2>
+          <p class="section-deck">Come for the landscapes. Stay for the conversations that turn a quick meal into an evening.</p>
+        </div>
+        <div class="reason-grid">
+          <article class="reason-card">
+            <span class="card-number mono">01</span>
+            <div class="reason-icon" aria-hidden="true">⌁</div>
+            <h3>Wildly varied</h3>
+            <p>Follow a morning in the old town with a mountain road, a Black Sea sunset or a vineyard lunch.</p>
+            <span class="card-tag">LANDSCAPES / 01</span>
+          </article>
+          <article class="reason-card">
+            <span class="card-number mono">02</span>
+            <div class="reason-icon" aria-hidden="true">✳</div>
+            <h3>Made to be shared</h3>
+            <p>Khachapuri, fresh herbs and generous toasts make the table as memorable as the destination.</p>
+            <span class="card-tag">TABLE / 02</span>
+          </article>
+          <article class="reason-card">
+            <span class="card-number mono">03</span>
+            <div class="reason-icon" aria-hidden="true">↗</div>
+            <h3>Easy to make yours</h3>
+            <p>Build a first trip around Tbilisi, then add the mountains, the coast or a few slow wine-country days.</p>
+            <span class="card-tag">YOUR ROUTE / 03</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="route-section section-pad" id="route" aria-labelledby="route-title">
+      <div class="shell route-layout">
+        <div class="route-heading">
+          <p class="eyebrow">A FIRST-TIMER'S ROUTE <span class="eyebrow-index mono">02 / 03</span></p>
+          <h2 id="route-title">14 days.<br><span>Four different Georgias.</span></h2>
+          <p class="section-deck">A relaxed first pass from the capital to the high Caucasus, with breathing room for the journey.</p>
+          <a class="text-link" href="#cta-title">Continue planning <span aria-hidden="true">→</span></a>
+          <p class="route-caveat mono">TRAVEL TIMES VARY WITH ROUTE, TRAFFIC &amp; SEASON.</p>
+        </div>
+        <ol class="itinerary">
+          <li><span class="day-range mono">DAYS 01—04</span><div><h3>Tbilisi &amp; Mtskheta</h3><p>Get your bearings in the capital, then make an easy day trip to Georgia's old spiritual heart.</p></div><span class="itinerary-mark" aria-hidden="true">01</span></li>
+          <li><span class="day-range mono">DAYS 05—06</span><div><h3>Kakheti wine country</h3><p>Head east for vineyard scenery, small towns and unhurried meals in the Alazani Valley.</p></div><span class="itinerary-mark" aria-hidden="true">02</span></li>
+          <li><span class="day-range mono">DAYS 07—09</span><div><h3>Kazbegi &amp; the high road</h3><p>Take the Georgian Military Highway north for big mountain views and a slower pace.</p></div><span class="itinerary-mark" aria-hidden="true">03</span></li>
+          <li><span class="day-range mono">DAYS 10—14</span><div><h3>Svaneti: Mestia &amp; Ushguli</h3><p>Finish among stone towers and high peaks. Leave time for the long journey into the mountains.</p></div><span class="itinerary-mark" aria-hidden="true">04</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="closing-cta" aria-labelledby="cta-title">
+      <div class="shell cta-inner">
+        <p class="eyebrow">YOUR NEXT STEP <span class="eyebrow-index mono">03 / 03</span></p>
+        <h2 id="cta-title">Start with a place.<br><span>Leave room for the rest.</span></h2>
+        <a class="button button-light" href="#route">Review the 14-day route <span aria-hidden="true">↗</span></a>
+        <span class="cta-coordinate mono" aria-hidden="true">41.7151° N<br>44.8271° E</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-main">
+      <a class="wordmark footer-wordmark" href="index.html" aria-label="Travel Georgia home"><span class="wordmark-mark" aria-hidden="true">TG</span><span>TRAVEL<br>GEORGIA</span></a>
+      <p>An independent starting point for a first trip to Georgia.</p>
+      <a class="footer-top" href="#main">Back to top ↑</a>
+    </div>
+    <div class="shell footer-bottom"><span>FIELD GUIDE / GEORGIA</span><span>Elevations and travel times are approximate; conditions vary by route and season.</span><span class="mono">© 2025</span></div>
+  </footer>
+</body>
+</html>
